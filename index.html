@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>pintrest web site</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- <div class="header" id="myHeader"> -->
+    <div> 
+<!--     <img src="pint.jpg" alt="img">   
+   	<button type="button" id="pinbtn">Pinterest</button> -->
+    <header class= "sticky">
+    <img src="ppp.jpg" alt="img">
+  	<button type="button"id="expbtn">Explore</button>
+
+  	<input type="text" name="display" id="text" placeholder="Search for easy dinner, fashion, etc" >
+
+  	<button type="button"id="logbtn">Log in</button>
+  	<button type="button"id="sinbtn">Sign up</button>
+  	<button type="button"id="btn">∨</button>
+  </div></header>
+   <br>
+    </div><br>
+  	<br><br><div><br><br>
+  		<h1>Explore Pinterset</h1>
+  	</div>
+ 
+    <div> 
+      <table>
+    <tr>
+    <td><img src="animals.jpg" alt="img" class="img" input type="text" name="Animals"></td>
+    <td><img src="architecture.jpg" alt="img" class="img"></td>
+    <td><img src="art.jpg" alt="img" class="img"></td>
+    <td><img src="beauty.jpg" alt="img" class="img"></td>
+    <td><img src="design.jpg" alt="img" class="img"></td>
+  </tr>
+  <tr>
+    <td><img src="DIY.jpg" alt="img" class="img"></td>
+    <td><img src="event.jpg" alt="img" class="img"></td>
+    <td><img src="food.jpg" alt="img" class="img"></td>
+    <td><img src="garden.jpg" alt="img" class="img"></td>
+    <td><img src="halloween.jpg" alt="img" class="img"></td>
+  </tr>
+  <tr>
+    <td><img src="home.jpg" alt="img" class="img"></td>
+    <td><img src="men.jpg" alt="img" class="img"></td>
+    <td><img src="qoutes.jpg" alt="img" class="img"></td>
+    <td><img src="travel.jpg" alt="img" class="img"></td>
+    <td><img src="wedding.jpg" alt="img" class="img"></td>
+  </tr>
+  <tr>
+    <td><img class="img1"></td>
+    <td><img class="img1"></td>
+    <td><img src="women.jpg" alt="img" class="img"></td>
+    <td><img class="img1"></td>
+    <td><img class="img1"></td>
+  </tr> 
+         </table>
+</div>
+  	
+  	
+    <script src="script.js">
+ window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+    </script>
+  </body>
+</html>
